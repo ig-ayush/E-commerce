@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>FashionFlow</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header >
+      <nav
+        class="flex h-[50px] md:h-[65px] items-center justify-between bg-bg-color z-[-1]"
+      >
+        <div class="logo flex items-center">
+          <img src="../Images/Logo.png"alt="Logo"class="w-[65px] object-cover"/>
+          <h2 class="font-bold text-color">FashionFlow</h2>
+        </div>
+        <!-- <ul class="md:flex hidden gap-8 mr-10 text-sm items-center text-white font-medium "> -->
+
+        <ul
+          class="md:flex md:flex-row l hidden mr-10 mt-3 text-sm md:text-lg items-center text-white font-medium p-5 gap-8"
+        >
+          <li class="hover:text-color cursor-pointer"><a href="#">Home</a></li>
+          <li class="hover:text-color cursor-pointer"><a href="#Products">Shop</a></li>
+          <li class="hover:text-color cursor-pointer"> <a href="#newArrivel">New arrivals</a></li>
+          <li class="hover:text-color cursor-pointer"><a href="#offers">Offers</a></li>
+          <li class="text-lg cursor-pointer">
+            <i class="fa-solid fa-chart-area"></i>
+          </li>
+        </ul>
+        <div class="checks mr-8 md:hidden">
+          <div id="check">
+            <i
+              class="fa-solid fa-bars text-white text-3xl hover:text-color"
+              id="menu"
+            ></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Sectio -->
+    <main
+      class="relative w-full h-[400px] bg-black bg-opacity-50 flex flex-col p-5 md:p-10 justify-center"
+      style="
+        background-image: url(../Images/hero.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <p class="text-gray-100 text-lg sm:text-2xl translate-x-1">
+        Elevate your wardrobe
+      </p>
+      <h1 class="text-4xl font-extrabold mb-4 md:text-5xl translate-x-1">
+        Explore the latest trends
+      </h1>
+      <p class="text-sm mb-4 md:text-lg translate-x-1">Your Style Your Way !</p>
+      <div>
+        <button
+          class="translate-x-1 text-left bg-bg-color text-color hover:-translate-y-2 transition duration-500 p-2 md:p-4 md:ml-6 font-medium text-sm rounded-xl border-none z-50"
+        >
+          <a href="#Products">Shop now</a>
+        </button>
+      </div>
+    </main>
+
+    <br />
+    <!-- Feature -->
+    <main>
+      <div class="grid grid-cols-3 gap-3 ml-3 mr-3 lg:grid-cols-6 md:p-6">
+        <div
+          id="shipping"
+          class="shipping h-[150px] lg:p-7 shadow-lg flex flex-col items-center justify-center gap-4"
+        >
+          <img src="../Images/Feature/f1.png" alt="Free Shipping" />
+          <p
+            class="text-[10px] bg-blue-200 w-max p-1 rounded-sm text-bg-color font-bo"
+          >
+            Free Shipping
+          </p>
+        </div>
+        <div
+          id="orders"
+          class="orders h-[150px] lg:p-7 shadow-lg flex flex-col items-center justify-center gap-4"
+        >
+          <img src="../Images/Feature/f2.png" alt="Free Shipping" />
+          <p
+            class="text-[10px] bg-red-200 w-max p-1 rounded-sm text-bg-color font-bo"
+          >
+            Online orders
+          </p>
+        </div>
+        <div
+          id="money"
+          class="money h-[150px] lg:p-7 shadow-lg flex flex-col items-center justify-center gap-4"
+        >
+          <img src="../Images/Feature/f3.png" alt="Free Shipping" />
+          <p
+            class="text-[10px] bg-green-200 w-max p-1 rounded-sm text-bg-color font-bo"
+          >
+            Save money
+          </p>
+        </div>
+        <div
+          id="pramotions"
+          class="pramotions h-[150px] lg:p-7 shadow-lg flex flex-col items-center justify-center gap-4"
+        >
+          <img src="../Images/Feature/f4.png" alt="Free Shipping" />
+          <p
+            class="text-[10px] bg-blue-400 w-max p-1 rounded-sm text-bg-color font-bo"
+          >
+            Promotions
+          </p>
+        </div>
+        <div
+          id="sell"
+          class="sell h-[150px] lg:p-7 shadow-lg flex flex-col items-center justify-center gap-4"
+        >
+          <img src="../Images/Feature/f5.png" alt="Free Shipping" />
+          <p
+            class="text-[10px] bg-purple-300 w-max p-1 rounded-sm text-bg-color font-bo"
+          >
+            Happy sell
+          </p>
+        </div>
+        <div
+          id="f24"
+          class="f24 h-[150px] lg:p-7 shadow-lg flex flex-col items-center justify-center gap-4"
+        >
+          <img src="../Images/Feature/f6.png" alt="Free Shipping" />
+          <p
+            class="text-[10px] bg-orange-300 w-max p-1 rounded-sm text-bg-color font-bo"
+          >
+            F24/7 Support
+          </p>
+        </div>
+      </div>
+    </main>
+    <br />
+
+    <!-- Products -->
+    <main >
+      <div class="flex flex-col items-center" id="Products">
+        <h1 class="text-3xl font-bold">Featured Products</h1>
+        <p class="text-sm text-gray-500">New Morden Design</p>
+      </div>
+      <br />
+      <div>
+        <div class="container flex items-center h-[280px] bg-gray-50 overflow-x-auto  overflow-y-hidden md:h-[350px] md:w-full mx-auto" id="row1">
+            <div class="row-1 flex gap-1 p-2 md:gap-3">
+
+                <!-- Product 1 -->
+                <div class="h-[250px] w-[170px] md:w-[220px] md:h-[300px] shadow-lg flex flex-col justify-center p-3 ">
+                    <img src="../Images/Products/f1.jpg" alt="Product-1" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f2.jpg" alt="Product-2" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f3.jpg" alt="Product-3" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f4.jpg" alt="Product-4" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f5.jpg" alt="Product-5" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f6.jpg" alt="Product-6" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f7.jpg" alt="Product-7" class="md:h-[200px] h-[120px] mb-1 md:object-cover1">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Floral Embroidered Linen Pants</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/f8.jpg" alt="Product-8" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+            </div>    
+            <button onclick="scrollRow('row1',-350)" class="text-3xl p-3"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+        <br>
+        <div class="container flex items-center h-[280px] bg-gray-50 overflow-x-auto  overflow-y-hidden md:h-[350px] md:w-full mx-auto" id="row2">
+            <div class="row-2 flex gap-1 p-2 md:gap-3 ">
+
+                <!-- Product 1 -->
+                <div class="h-[250px] w-[170px] md:w-[220px] md:h-[300px] shadow-lg flex flex-col justify-center p-3 ">
+                    <img src="../Images/Products/n1.jpg" alt="Product-1" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Men's Gingham Button-Down Shirt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n2.jpg" alt="Product-2" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Checkered Long-Sleeve Shirt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n3.jpg" alt="Product-3" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Checkered Long-Sleeve Shirt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n4.jpg" alt="Product-4" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n5.jpg" alt="Product-5" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Checkered Long-Sleeve Shirt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n6.jpg" alt="Product-6" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Striped Shorts with Belt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n7.jpg" alt="Product-7" class="md:h-[200px] h-[120px] mb-1 md:object-cover1">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Checkered Long-Sleeve Shirt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="h-[250px] w-[170px] shadow-lg flex flex-col justify-center p-2 object-contain md:w-[220px] md:h-[300px]">
+                    <img src="../Images/Products/n8.jpg" alt="Product-8" class="md:h-[200px] h-[120px] mb-1 md:object-cover">
+                    <div class="cursor-pointer">
+                        <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                   <div class="flex justify-between p-1">
+                    <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                    <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                        <i class="fa-solid fa-cart-shopping "></i>
+                    </p>
+                    </div>
+                   </div>
+                </div>
+            </div> 
+            <button onclick="scrollRow('row2',-350)" class="text-3xl p-3"><i class="fa-solid fa-chevron-left"></i></button>
+        </div>
+    </main>
+    <br>
+    <br>
+    <!-- Offers -->
+     <main class="h-[200px] " style=
+     "background-image: url(../Images/OfferSec.avif);
+     background-position:center;
+     background-size:cover;
+     background-repeat: no-repeat;
+     ">
+        <div class="flex flex-col justify-center h-[200px] ml-5 md:items-center md:ml-[150px]" id="newArrivel">
+            <p class="text-sm md:ml-[-180px] mb-1">FashionFlow</p>
+            <div class="flex flex-col md:flex-row">
+                <h1 class="text-lg md:text-2xl md:ml-[180px] md:mb-3 text-white font-bold">Up to <span class="text-red-500">70%</span> off -&nbsp</h1>
+                <span class="text-blue-900 text-lg md:text-2xl font-extrabold"> All t-shirts & Accessories</span>
+            </div>
+            <button class="bg-white w-[140px] h-8 mt-3 rounded-md hover:bg-color hover:text-white hover:translate-x-2 duration-300 border-none">Explore More</button>
+        </div>
+     </main>
+
+     <br>
+    <!-- New arrivel -->
+     <main id="newArrivel">
+        <h1 class="text-3xl ml-10 font-semibold">New Arrivals</h1>
+        <h1 class="text-md ml-10 text-gray-600">New Designs</h1>
+        <div class="grid grid-cols-2 gap-2 m-1 md:grid-cols-4 md:m-5">
+            <!-- Product 1 -->
+            <div class="h-[280px] shadow-lg flex flex-col justify-center p-3 items-center ">
+                <img src="../Images/Products/n5.jpg" alt="Products" class="w-[150px]  ">
+                <div class="con cursor-pointer mt-2">
+                    <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color md:text-sm">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="flex justify-between p-1">
+                        <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                        <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                            <i class="fa-solid fa-cart-shopping "></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="h-[280px] shadow-lg flex flex-col justify-center p-3 items-center">
+                <img src="../Images/Products/n6.jpg" alt="Products" class="w-[150px] ">
+                <div class="con cursor-pointer mt-2">
+                    <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color  md:text-sm">Striped Shorts with Belt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="flex justify-between p-1">
+                        <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                        <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                            <i class="fa-solid fa-cart-shopping "></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="h-[280px] shadow-lg flex flex-col justify-center p-3 items-center">
+                <img src="../Images/Products/n7.jpg" alt="Products" class="w-[150px] ">
+                <div class="con cursor-pointer mt-2">
+                    <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color  md:text-sm">Checkered Long-Sleeve Shirt</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="flex justify-between p-1">
+                        <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                        <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                            <i class="fa-solid fa-cart-shopping "></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="h-[280px] shadow-lg flex flex-col justify-center p-3 items-center">
+                <img src="../Images/Products/n8.jpg" alt="Products" class="w-[150px] ">
+                <div class="con cursor-pointer mt-2">
+                    <p class="text-[10px] text-blue-500">adidas</p>
+                    <p class="text-[10px] hover:text-color  md:text-sm">Cartoon Astronout T-shirts</p>
+                    <ul class="flex text-[15px] text-color  m-1">
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                        <li><i class="fa-solid fa-star"></i></li>
+                    </ul>
+                    <div class="flex justify-between p-1">
+                        <p class=" mt-1"> <span class="text-color font-bold">&#8377;</span>6,799</p>
+                        <p class="bg-gray-200 p-1 text-[15px] rounded-2xl w-8 text-center mb-1 hover:bg-color duration-200">
+                            <i class="fa-solid fa-cart-shopping "></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+         </div>
+     </main>
+
+     <br id="offers">
+     <!-- Last section -->
+      <main >
+        <div class="grid md:grid-cols-2 gap-2 m-1 md:m-5 md:gap-4" >
+            <div class="relative flex">
+                <img src="../Images/b17.jpg" alt="Banner" class="object-cover">
+                <div class="absolute top-0 text-white flex flex-col mb-1 mt-10 ml-5">
+                    <p class="text-sm">Crazy deals</p>
+                    <h1 class="text-3xl font-bold mb-4 ">buy 1 get 1 free</h1>
+                    <button class="w-[130px] bg-bg-color p-2 hover:bg-white hover:text-black duration-200">Learn more</button>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="../Images/b10.jpg" alt="Banner">
+                <div class="absolute bottom-3  text-white flex flex-col mb-1 mt-10 ml-5">
+                    <h1 class="text-3xl font-bold mb-4 ">buy 1 get 1 free</h1>
+                <p class="text-sm mb-2">The best classic dress is on sale </p>
+                <button class="w-[130px] bg-transparent border-white border-2 p-1 hover:bg-white hover:text-black duration-200">Collections</button>
+                </div>
+            </div>
+        </div>
+      </main>
+
+      <br>
+      <!-- Sign Up -->
+       <main>
+        <div class="w-full md:h-[90px] bg-bg-color text-white grid md:grid-cols-2 p-4 items-center gap-4 ">
+            <div>
+                <h1 class="font-semibold text-lg">Sign Up for Newletters</h1>
+                <p class="text-[10px]">Get gmail updates about out latest shop and <span class="text-color font-bold">Special Offers.</span></p>
+            </div>
+
+            <div class="flex">
+                <form class="flex justify-end mr-5 ">
+                   <div class="bg-white rounded-lg">
+                    <input type="email" placeholder="Your email address" class="p-2 outline-none text-black rounded-md">
+                    <button type="submit" class="bg-color p-2 hover:bg-black duration-200 ">Sign Up</button>
+                   </div>
+                </form>
+            </div>
+        </div>
+       </main>
+
+       <br>
+       <hr>
+       <!-- Footer -->
+        <footer class=" h-[350px]  p-4 grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div class="logo flex  flex-col">
+                <img src="../Images/Logo.png" alt="Logo" class="w-[100px] object-cover">
+                <h1 class="text-color font-bold ">FashionFlow</h1>
+            </div>
+            <div class="mt-20 text-sm">
+                <h1 class="text-sm font-bold mb-3">Contact</h1>
+                <ul class="text-sm">
+                    <li class="text-sm"><span class="font-bold text-sm">Phone:</span>&nbsp +91 9535178266 </li>
+                    <li class="text-sm"><span class="font-bold text-sm">Hours:</span>&nbsp10:00 - 18:00 Mon - Sat </li>
+                </ul>
+                <br>
+                <p>Follow US</p>
+                <ul class="flex gap-5 mt-2 text-sm">
+                    <li><i class="fa-brands fa-instagram"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-solid fa-envelope"></i></li>
+                    <li><i class="fa-brands fa-x-twitter"></i></li>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                </ul>
+            </div>
+            <div class="mt-20">
+                <h1 class="text-sm font-bold mb-3">About </h1>
+                <ul class="text-sm">
+                    <li class="text-sm">About US</li>
+                    <li class="text-sm">Dilivery Information</li>
+                    <li class="text-sm">Privacy Policy </li>
+                    <li class="text-sm">Term & Conditions</li>
+                </ul>
+            </div>
+            <div class="mt-20">
+                <h1 class="text-sm font-bold mb-3">My Account</h1>
+                <ul>
+                    <li class="text-sm">Sign Up</li>
+                    <li class="text-sm">View Cart</li>
+                    <li class="text-sm">My Wishlist</li>
+                    <li class="text-sm">Track My Order</li>
+                    <li class="text-sm">Help</li>
+                </ul>
+            </div>
+        </footer>
+  </body>
+  <script src="./src/script.js"></script>
+</html>
